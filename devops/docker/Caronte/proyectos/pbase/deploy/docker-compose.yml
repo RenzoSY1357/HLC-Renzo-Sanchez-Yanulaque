@@ -3,6 +3,6 @@ services:
      build:
         #   ruta a traves de la cual desde cualquier proyecto, se tiene acceso a
         # ⬇ cualquier imagen (DockerFile), aqui se marca la ruta absoluta
-        context: "/home/renzo/HLC/devops/docker/Caronte"
-        dockerfile: "./dockerfiles/base/ubuntu/Dockerfile" # <- apunta al dockerfile
-    container_name: "ctbaseDAW"
+        context: /home/renzo/HLC/devops/docker/Caronte
+        dockerfile: ./dockerfiles/base/ubuntu/Dockerfile # <- apunta al dockerfile
+     container_name: ctbaseDAW
