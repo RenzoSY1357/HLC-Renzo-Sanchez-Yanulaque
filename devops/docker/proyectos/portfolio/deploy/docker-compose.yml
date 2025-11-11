@@ -9,3 +9,9 @@ services:
     container_name: ctportfolio
     ports:
       - "8820:80"
+
+# Para desplegar el contenedor:
+# docker compos up -d --build
+
+# Para ingresar en el shell del contenedor:
+# docker exec -it ctportfolio bash
