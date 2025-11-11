@@ -6,7 +6,7 @@ RUN apt update && apt install -yq --no-install-recommends \
     nano \
     curl \
     net-tools iputils-ping
-RUN useradd -rm -d /home/renzo -s /bin/bash renzo
+# RUN useradd -rm -d /home/renzo -s /bin/bash renzo
 
 # mantener vivo el contenedor (esto es una instruccion que se ejecuta en primer plano)
 CMD [ "tail", "-f", "/dev/null"] # basicamente, un comando infinito
