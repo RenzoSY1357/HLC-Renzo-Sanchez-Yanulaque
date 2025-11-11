@@ -35,4 +35,6 @@ COPY ./dockerfiles/base/ubuntu/admin .
 RUN chmod o+x ./start.sh
 
 # script de arrranque para crear la iso y ejecutar el contendor
-ENTRYPOINT [ "executable" ]
+ENTRYPOINT [ "./start.sh" ]
+
+# QUESTION: docker compose down -rmi all
