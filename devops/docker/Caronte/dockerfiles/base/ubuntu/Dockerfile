@@ -37,4 +37,8 @@ RUN chmod o+x ./start.sh
 # script de arrranque para crear la iso y ejecutar el contendor
 ENTRYPOINT [ "./start.sh" ]
 
-# QUESTION: docker compose down -rmi all
+# CHECK:
+#   docker pull origin master
+#   docker compose down -rmi all
+#   docker compose up -d --build
+#   docker exec -it ctbaseDAW bash
